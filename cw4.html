@@ -10,10 +10,13 @@
 			//document.write("Funkcja została wywołana ");
 
 			let a,b,w; //zmienne lokalne
-
 			//a=document.getElementById("dana1").value;
 			a=parseFloat(document.getElementById("dana1").value);
-			document.write(a);
+			b=parseFloat(document.getElementById("dana2").value);
+			w=a+b;
+
+			//document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
+			document.getElementById("wynik").textContent= "<b>Wynik = </b>"+w;
 		}
 	</script>
 </head>
