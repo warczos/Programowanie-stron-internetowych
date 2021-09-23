@@ -5,14 +5,65 @@
 	<title>Przykład 5 Funckje</title>
 
 	<script>
-		function solver()
+		function suma()
 		{
 			let a,b,res; //zmienne lokalne
+
+      a=parseFloat(document.getElementById("dana1").value);
+			b=parseFloat(document.getElementById("dana2").value);
+
       res=a+b;
 
-			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
-			//document.getElementById("wynik").textContent= "<b>Wynik = </b>"+w;
+			document.getElementById("resoult").innerHTML= res;
 		}
+
+    function odejmowanie()
+    {
+      let a,b,res; //zmienne lokalne
+
+      a=parseFloat(document.getElementById("dana1").value);
+      b=parseFloat(document.getElementById("dana2").value);
+
+      res=a-b;
+
+      document.getElementById("resoult").innerHTML= res;
+    }
+
+    function mnozenie()
+    {
+      let a,b,res; //zmienne lokalne
+
+      a=parseFloat(document.getElementById("dana1").value);
+      b=parseFloat(document.getElementById("dana2").value);
+
+      res=a*b;
+
+      document.getElementById("resoult").innerHTML= res;
+    }
+
+    function dzielenie()
+    {
+      let a,b,res; //zmienne lokalne
+
+      a=parseFloat(document.getElementById("dana1").value);
+      b=parseFloat(document.getElementById("dana2").value);
+
+      res=a/b;
+
+      document.getElementById("resoult").innerHTML= res;
+    }
+
+    function square()
+    {
+      let a,b,res; //zmienne lokalne
+
+      a=parseFloat(document.getElementById("dana1").value);
+      b=parseFloat(document.getElementById("dana2").value);
+
+      res=Math.pow(a,b);
+
+      document.getElementById("resoult").innerHTML= res;
+    }
 	</script>
 </head>
 <body>
@@ -20,10 +71,10 @@
 	b=<input type="text" id="dana2" /><br />
 
 	<input type="button" value="+" onclick="suma()"/>
-	<input type="button" value="-" onclick="suma()"/>
-	<input type="button" value="*" onclick="suma()"/>
-	<input type="button" value="/" onclick="suma()"/>
-	<input type="button" value="^" onclick="suma()"/>
+	<input type="button" value="-" onclick="odejmowanie()"/>
+	<input type="button" value="*" onclick="mnozenie()"/>
+	<input type="button" value="/" onclick="dzielenie()"/>
+	<input type="button" value="^" onclick="square()"/>
 
 	<p>Wynik= <span id="resoult"></span></p>
 </html>
