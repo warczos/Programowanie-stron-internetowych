@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Przykład 5 Funckje</title>
+
+	<script>
+		function solver()
+		{
+			let a,b,res; //zmienne lokalne
+      res=a+b;
+
+			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
+			//document.getElementById("wynik").textContent= "<b>Wynik = </b>"+w;
+		}
+	</script>
+</head>
+<body>
+	a=<input type="text" id="dana1" /><br />
+	b=<input type="text" id="dana2" /><br />
+
+	<input type="button" value="+" onclick="suma()"/>
+	<input type="button" value="-" onclick="suma()"/>
+	<input type="button" value="*" onclick="suma()"/>
+	<input type="button" value="/" onclick="suma()"/>
+	<input type="button" value="^" onclick="suma()"/>
+
+	<p>Wynik= <span id="resoult"></span></p>
+</html>
