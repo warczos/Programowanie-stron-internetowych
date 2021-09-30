@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Calc 1 wersja pierwotna mocno za długa</title>
+
+	<script>
+	function dodaj7() {
+		document.getElementById("wynik").value+="7";
+		//x=x+y
+		//x+=y
+	}
+	function dodaj8() {
+		document.getElementById("wynik").value+="8";
+	}
+	function dodaj9() {
+		document.getElementById("wynik").value+="9";
+	}
+	function dodaj4() {
+		document.getElementById("wynik").value+="4";
+	}
+	function dodaj5() {
+		document.getElementById("wynik").value+="5";
+	}
+	function dodaj6() {
+		document.getElementById("wynik").value+="6";
+	}
+	function dodaj1() {
+		document.getElementById("wynik").value+="1";
+	}
+	function dodaj2() {
+		document.getElementById("wynik").value+="2";
+	}
+	function dodaj3() {
+		document.getElementById("wynik").value+="3";
+	}
+	function dodaj0() {
+		document.getElementById("wynik").value+="0";
+	}
+
+	function dodaj(x) {
+		document.getElementById("wynik").value+="x";
+	}
+	</script>
+</head>
+<body>
+	<input type="text" id="wynik" /><br/>
+	<input type="button" value="7" onclick="dodaj(7)"/>
+	<input type="button" value="8" onclick="dodaj(8)"/>
+	<input type="button" value="9" onclick="dodaj(9)"/>
+	<input type="button" value="+"/><br/>
+	<input type="button" value="4" onclick="dodaj(4)"/>
+	<input type="button" value="5" onclick="dodaj(5)"/>
+	<input type="button" value="6" onclick="dodaj(6)"/>
+	<input type="button" value="-"/><br/>
+	<input type="button" value="1" onclick="dodaj(1)"/>
+	<input type="button" value="2" onclick="dodaj(2)"/>
+	<input type="button" value="3" onclick="dodaj(3)"/>
+	<input type="button" value="*"/><br/>
+	<input type="button" value=","/>
+	<input type="button" value="0" onclick="dodaj0()"/>
+	<input type="button" value="="/>
+	<input type="button" value="/"/><br/>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Calc 2</title>
+
+	<script>
+	var a,b,d;
+
+	function dodaj(x) {
+		document.getElementById("wynik").value+=x;
+	}
+	function dzialanie(y) {
+		a=parseFloat(document.getElementById("wynik").value);
+		document.getElementById("wynik").value="";
+		d=y;
+		// document.getElementById("test").value=a;
+	}
+	function equals() {
+		let res;
+
+		b=parseFloat(document.getElementById("wynik").value);
+		//document.getElementById("wynik").value="";
+		if (d==1) {
+			res=a+b;
+			document.getElementById("wynik").value=res;
+		}
+		if (d==2) {
+			res=a-b;
+			document.getElementById("wynik").value=res;
+		}
+		if (d==3) {
+			res=a*b;
+			document.getElementById("wynik").value=res;
+		}
+		if (d==4) {
+			res=a/b;
+			document.getElementById("wynik").value=res;
+		}
+	}
+	function przecinek() {
+		document.getElementById("wynik").value+=".";
+	}
+
+	function clean() {
+		document.getElementById("wynik").value="";
+	}
+	</script>
+</head>
+<body>
+	<input type="text" id="wynik" /><br/>
+	<input type="button" value="7" onclick="dodaj(7)"/>
+	<input type="button" value="8" onclick="dodaj(8)"/>
+	<input type="button" value="9" onclick="dodaj(9)"/>
+	<input type="button" value="+" onclick="dzialanie(1)"/><br/>
+	<input type="button" value="4" onclick="dodaj(4)"/>
+	<input type="button" value="5" onclick="dodaj(5)"/>
+	<input type="button" value="6" onclick="dodaj(6)"/>
+	<input type="button" value="-" onclick="dzialanie(2)"/><br/>
+	<input type="button" value="1" onclick="dodaj(1)"/>
+	<input type="button" value="2" onclick="dodaj(2)"/>
+	<input type="button" value="3" onclick="dodaj(3)"/>
+	<input type="button" value="*" onclick="dzialanie(3)"/><br/>
+	<input type="button" value="," onclick="przecinek()"/>
+	<input type="button" value="0" onclick="dodaj(0)"/>
+	<input type="button" value="=" onclick="equals()"/>
+	<input type="button" value="/" onclick="dzialanie(4)"/><br/>
+	<input type="button" value="Clear" onclick="clean()"/>
+
+	<!-- <input type="text" id="test"/> -->
+
+</body>
+</html>
