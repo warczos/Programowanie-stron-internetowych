@@ -5,26 +5,58 @@
 	<title>Przykład 4</title>
 
 	<script>
-		function suma()
+		function dodawanie()
 		{
 			//document.write("Funkcja została wywołana ");
-
 			let a,b,w; //zmienne lokalne
 			//a=document.getElementById("dana1").value;
 			a=parseFloat(document.getElementById("dana1").value);
 			b=parseFloat(document.getElementById("dana2").value);
 			w=a+b;
 
-			//document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
-			document.getElementById("wynik").textContent= "<b>Wynik = </b>"+w;
+			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
+			//document.getElementById("wynik").textContent= "<b>Wynik = </b>"+w;
+		}
+
+		function odejmowanie()
+		{
+			let a,b,w; //zmienne lokalne
+			a=parseFloat(document.getElementById("dana1").value);
+			b=parseFloat(document.getElementById("dana2").value);
+			w=a-b;
+
+			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
+		}
+
+		function mnozenie()
+		{
+			let a,b,w; //zmienne lokalne
+			a=parseFloat(document.getElementById("dana1").value);
+			b=parseFloat(document.getElementById("dana2").value);
+			w=a*b;
+
+			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
+		}
+
+		function dzielenie()
+		{
+			let a,b,w; //zmienne lokalne
+			a=parseFloat(document.getElementById("dana1").value);
+			b=parseFloat(document.getElementById("dana2").value);
+			w=a/b;
+
+			document.getElementById("wynik").innerHTML= "<b>Wynik = </b>"+w;
 		}
 	</script>
 </head>
 <body>
-	a=<input type="text" id="dana1" />
+	a=	<input type="text" id="dana1" />
 	<br />
-	b=<input type="text" id="dana2" />
+	b=	<input type="text" id="dana2" />
 	<br />
-	<input type="button" value="dodawanie" onclick="suma()"/>
+	<input type="button" value="Dodawanie" onclick="dodawanie()"/>
+	<input type="button" value="Odejmowanie" onclick="odejmowanie()"/>
+	<input type="button" value="Mnożenie" onclick="mnozenie()"/>
+	<input type="button" value="Dzielenie" onclick="dzielenie()"/>
 	<p id="wynik"></p>
 </html>
