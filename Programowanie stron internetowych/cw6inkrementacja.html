@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>cw6 inkrementacja</title>
+
+  <script>
+    function pokaz() {
+      let x = 10;
+
+      x++;
+      document.getElementById("wynik").innerHTML += x + "<br/>";
+      document.getElementById("wynik").innerHTML += (x++) + "<br/>";
+      document.getElementById("wynik").innerHTML += x + "<br/>";
+    }
+  </script>
+</head>
+
+<body>
+
+  <input type="button" value="Oblicz" onclick="pokaz()">
+  <p id="wynik"></p>
+</body>
+
+</html>
