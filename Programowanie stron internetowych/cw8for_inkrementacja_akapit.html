@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>cw8 petla for akapit</title>
+
+  <script>
+    function pokaz() {
+      for (let i = 1; i <= 10; i++) {
+        // document.getElementById("wynik").innerHTML += i + "<br/>";
+          document.getElementById("akapit"+i).innerHTML=i;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <input type="button" value="Oblicz" onclick="pokaz()">
+  <p id="akapit1"></p>
+  <p id="akapit2"></p>
+  <p id="akapit3"></p>
+  <p id="akapit4"></p>
+  <p id="akapit5"></p>
+  <p id="akapit6"></p>
+  <p id="akapit7"></p>
+  <p id="akapit8"></p>
+  <p id="akapit9"></p>
+  <p id="akapit10"></p>
+</body>
+
+</html>
