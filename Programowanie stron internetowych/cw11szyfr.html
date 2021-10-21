@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Szyfr cezara</title>
+
+  <script>
+  function x() {
+    let a=document.getElementById("d").value;
+    a=a.toUpperCase();
+    let dl=a.length;
+    // document.getElementById("w1").innerHTML=a;
+    let szyfr="";
+
+    for (var i = 0; i < dl; i++) {
+      // document.getElementById("w2").innerHTML +=a.charAt(i)+"<br/>";
+      let kod=a.charCodeAt(i);
+      kod=65+(kod-65+3)%26;
+      szyfr=szyfr+ String.fromCharCode(kod);
+    }
+    document.getElementById("w1").innerHTML=a;
+    document.getElementById("w2").innerHTML=szyfr;
+  }
+
+  function y() {
+    let a=document.getElementById("w2").innerHTML;
+
+    let dl=a.length;
+    let szyfr="";
+
+    for (var i = 0; i < dl; i++) {
+      
+
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  Podaj tekst do zaszyfrowania:
+  <input type"text" id="d"/>
+  <br/>
+  <input type="button" value="Szyfrowanie" onclick="x()"/>
+  <p>Tekst jawny= <span id="w1"></span></p>
+  <p>Tekst zaszyfrowany= <span id="w2"></span></p>
+  <p>Tekst odszyfrowany= <span id="w3"></span></p>
+</body>
+
+</html>
