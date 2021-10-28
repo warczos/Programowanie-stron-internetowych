@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Pętla while</title>
+
+  <script>
+  function wyswietl() {
+    // for (var i = 1; i <= 100; i++) {
+    //   document.getElementById("wynik").innerHTML+=i+ " ";
+    // }
+    var i = 1;
+    while (i<=10000) {
+      document.getElementById("wynik").innerHTML+=i+ " ";
+      i++;
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <input type="button" name="" value="Pokaż" onclick="wyswietl()">
+  <p id="wynik"></p>
+</body>
+
+</html>
