@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Szyfr cezara</title>
+
+  <script>
+  function cezar() {
+    let a=document.getElementById("d").value;
+    a=a.toUpperCase();
+    document.getElementById("w1").innerHTML=a;
+    let dl=a.length;
+
+    let krok=parseFloat(document.getElementById("krok").value)
+
+    let alfabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let szyfr = "";
+    for (var i = 0; i < dl; i++) { //napis
+      for (var j = 0; j < 26; j++) { //alfabet
+        if (a.charAt(i) == alfabet.charAt(j)) {
+          szyfr=szyfr+alfabet.charAt(Math.abs(j+krok+26)%26);
+        }
+      }
+    }
+    document.getElementById("w2").innerHTML=szyfr;
+
+    // for (var i = 65; i < 90; i++) {
+    //   document.getElementById("w2").innerHTML+=String.fromCharCode(i);
+    // }
+  }
+
+  function decezar() {
+    let a=document.getElementById("d").value;
+    a=a.toUpperCase();
+    document.getElementById("w1").innerHTML=a;
+    let dl=a.length;
+
+    let krok=parseFloat(document.getElementById("krok").value)
+
+    let alfabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    let szyfr = "";
+    for (var i = 0; i < dl; i++) { //napis
+      for (var j = 0; j < 26; j++) { //alfabet
+        if (a.charAt(i) == alfabet.charAt(j)) {
+          szyfr=szyfr+alfabet.charAt(Math.abs(j-krok+26)%26);
+        }
+      }
+    }
+    document.getElementById("w3").innerHTML=szyfr;
+  }
+  </script>
+</head>
+
+<body>
+
+  Podaj tekst do zaszyfrowania:
+  <input type"text" id="d"/>
+  <br/>
+  <input type="button" value="Szyfrowanie" onclick="cezar()"/>
+  <input type="button" value="Deszyfrowanie" onclick="decezar()"><br>
+  Krok= <input type="text" name="" value="3" id="krok">
+  <p>Tekst jawny= <span id="w1"></span></p>
+  <p>Tekst zaszyfrowany= <span id="w2"></span></p>
+  <p>Tekst odszyfrowany= <span id="w3"></span></p>
+</body>
+
+</html>
