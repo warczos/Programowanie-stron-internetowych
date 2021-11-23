@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Pętla binarna</title>
+
+  <script>
+  function wyswietl() {
+    let dana,s,reszta;
+    dana = parseInt(document.getElementById("tekst").value)
+    s="";
+    while (dana!=0) {
+      reszta = dana%2;
+      dana= (dana-reszta)/2;
+      s=reszta+s;
+    }
+    document.getElementById("wynik").innerHTML+=s;
+  }
+  </script>
+</head>
+<body>
+
+  <input type="text" name="" value="" id="tekst">
+  <input type="button" name="" value="Pokaż" onclick="wyswietl()">
+  <p id="wynik"></p>
+</body>
+
+</html>
