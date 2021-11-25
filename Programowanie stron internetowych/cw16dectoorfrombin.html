@@ -15,14 +15,14 @@
       dana= (dana-reszta)/2;
       s=reszta+s;
     }
-    document.getElementById("teskt2").value=s.toString();
+    document.getElementById("tekst2").value=s;
   }
   function bintodec() {
     let dana,s;
     dana = document.getElementById("tekst2").value;
     s=0;
     for (var i = 0; i < dana.length; i++) {
-      if (dana.charAt(i)==1) {
+      if (dana.charAt(dana.length-1-i)=="1") {
         s=s+Math.pow(2,i);
       }
       // s=s+Math.pow(2,i);
@@ -32,11 +32,11 @@
   </script>
 </head>
 <body>
-  Podaj liczbę DEC <input type="text" name="text" value="" id="tekst">
+  Podaj liczbę DEC <input type="text" name="text" id="tekst">
   <input type="button" name="" value="Pokaż" onclick="dectobin()">
   <p id="wynik"></p>
   <hr>
-  Podaj liczbę BIN <input type="text" name="text2" value="" id="tekst2">
+  Podaj liczbę BIN <input type="text" name="text2" id="tekst2">
   <input type="button" name="" value="Pokaż" onclick="bintodec()">
   <p id="wynik2"></p>
 </body>
