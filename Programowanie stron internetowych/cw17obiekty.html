@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Wprowadzenie do obiektów</title>
+
+  <script>
+
+  </script>
+</head>
+
+<body>
+  <p>Imie:     <span id="i"></span></p>
+  <p>Nazwisko: <span id="n"></span></p>
+  <p>Wiek:      <span id="w"></span></p>
+  <script type="text/javascript">
+    let czlowiek={
+      imie:'Jan',
+      nazwisko:'Nowak',
+      wiek:67,
+    }
+
+    document.getElementById("i").innerHTML=czlowiek.imie;
+    document.getElementById("n").innerHTML=czlowiek['nazwisko'];
+    document.getElementById("w").innerHTML=`lat ${czlowiek.wiek}`;
+  </script>
+
+</body>
+
+</html>
