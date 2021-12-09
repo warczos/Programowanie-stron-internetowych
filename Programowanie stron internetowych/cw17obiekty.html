@@ -11,19 +11,45 @@
 </head>
 
 <body>
+  Imie: <input type="text" name="" value="" id="ii"><br>
+  Nazwisko: <input type="text" name="" value="" id="nn"><br>
+  Wiek: <input type="text" name="" value="" id="ww"><br>
+  <input type="button" name="" value="Zmień" onclick="zmien()">
+
   <p>Imie:     <span id="i"></span></p>
   <p>Nazwisko: <span id="n"></span></p>
   <p>Wiek:      <span id="w"></span></p>
   <script type="text/javascript">
+  function zmien() {
+    let x,y,z;
+    x=document.getElementById("ii").value;
+    y=document.getElementById("nn").value;
+    z=document.getElementById("ww").value;
+
     let czlowiek={
-      imie:'Jan',
-      nazwisko:'Nowak',
-      wiek:67,
+      imie: x,
+      nazwisko:y,
+      wiek: z,
+      ur:{
+        dzien:11,
+        miesiac:10,
+        rok:2000,
+      },
+
+      wyswietl:function() {
+        document.getElementById("i").innerHTML=this.imie;
+        document.getElementById("n").innerHTML=this.nazwisko;
+        document.getElementById("w").innerHTML=this.wiek;
+        this.ur.dzien+"-"+this.ur.miesiac+"-"+this.ur.rok
+      }
     }
 
-    document.getElementById("i").innerHTML=czlowiek.imie;
-    document.getElementById("n").innerHTML=czlowiek['nazwisko'];
-    document.getElementById("w").innerHTML=`lat ${czlowiek.wiek}`;
+    czlowiek.wyswietl();
+
+    // 1document.getElementById("i").innerHTML=czlowiek.imie;
+    // document.getElementById("n").innerHTML=czlowiek['nazwisko'];
+    // document.getElementById("w").innerHTML=`lat ${czlowiek.wiek}`;
+  }
   </script>
 
 </body>
