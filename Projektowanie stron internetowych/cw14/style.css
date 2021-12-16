@@ -2,5 +2,6 @@ p{
   font-family: Roboto;
   font-size: 22px;
   color: yellow;
-  background: blue
+  background: blue;
+  border: 5px;
 }

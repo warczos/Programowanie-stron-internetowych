@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>utwórz - create</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="kontener">
+
+  </div>
+
+  <input type="button" name="" value="Wstaw" onclick="uruchom()" class="button">
+  <input type="button" name="" value="Wstaw2" id="przycisk2" class="button">
+  <button type="button" name="" value="" onclick="oblicz()" class="button">Ile akapitów?</button>
+
+
+  <script>
+    let akapit = document.createElement("p");
+    function uruchom() {
+      akapit.innerHTML = Math.round(Math.random()*1000);
+      document.body.appendChild(akapit);
+    }
+
+    document.getElementById("przycisk2").addEventListener("click",function(){
+      let akapit = document.createElement("p");
+      akapit.innerHTML = Math.round(Math.random()*1000);
+      document.body.appendChild(akapit);
+    });
+
+    const ak = document.createElement("p");
+    oblicz = () =>
+    {
+      let akapity = document.getElementsByTagName("p");
+      let ilosc = akapity.lenght;
+      ak.innerHTML= ilosc;
+      document.getElementById("kontener").appendChild(ak);
+
+      akapity[4].syle.color="red";
+    }
+  </script>
+</body>
+
+</html>
