@@ -1,0 +1,62 @@
+#container {
+  margin-left: 10%;
+  margin-hight: 10%;
+  width: 80%;
+  height: 100%;
+  font-family: Helvetica;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  width: 50%;
+  height: 50%;
+}
+
+#world {
+  text-align: center;
+  font-size: 3em;
+  color: black;
+  background-color: cyan;
+}
+
+img {
+  width: 50%;
+}
+
+#img {
+  background-color: black;
+}
+
+ol {
+  padding-left: 8%;
+}
+
+li {
+  padding-bottom: 1px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#planet {
+  font-size: 1.3em;
+}
+
+#link {
+  text-align: center;
+  padding-top: 0px;
+  background-color: yellow;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+}
