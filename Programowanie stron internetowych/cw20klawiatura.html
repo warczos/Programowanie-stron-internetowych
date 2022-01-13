@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Listener klawiatura</title>
+  <style media="screen">
+    div {
+      background-color:#404040;
+      width:360px;
+      height:100px;
+      padding:3px;
+    }
+    input[type="button"]{
+      background-color:black;
+      border:1px solid white;
+      color:white;
+      width:30px;
+      height:30px;
+      border-radius:20%;
+      margin:1px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="1row">
+    <input type="button" id="b1" value="Q">
+    <input type="button" id="b2" value="W">
+    <input type="button" id="b3" value="E">
+    <input type="button" id="b4" value="R">
+    <input type="button" id="b5" value="T">
+    <input type="button" id="b6" value="Y">
+    <input type="button" id="b7" value="U">
+    <input type="button" id="b8" value="I">
+    <input type="button" id="b9" value="O">
+    <input type="button" id="b10" value="P">
+    <br>
+    <input type="button" id="b11" value="A" style="margin-left:10px">
+    <input type="button" id="b12" value="S">
+    <input type="button" id="b13" value="D">
+    <input type="button" id="b14" value="F">
+    <input type="button" id="b15" value="G">
+    <input type="button" id="b16" value="H">
+    <input type="button" id="b17" value="J">
+    <input type="button" id="b18" value="K">
+    <input type="button" id="b19" value="L">
+    <br>
+    <input type="button" id="b20" value="Z" style="margin-left:25px">
+    <input type="button" id="b21" value="X">
+    <input type="button" id="b22" value="C">
+    <input type="button" id="b23" value="V">
+    <input type="button" id="b24" value="B">
+    <input type="button" id="b25" value="N">
+    <input type="button" id="b26" value="M">
+  </div>
+  <p id="wynik"></p>
+  <script>
+    window.addEventListener("keydown", e=>{
+      let klawisz, kod;
+      klawisz=e.keyCode;
+
+      for (var i = 1; i <= 26 ; i++) {
+          kod= document.getElementById("b" + i).value.charCodeAt();
+          if (kod == klawisz) {
+            document.getElementById("b" + i).style.backgroundColor="yellow";
+            document.getElementById("b" + i).style.color="red";
+          } else {
+            document.getElementById("b" + i).style.backgroundColor="black";
+            document.getElementById("b" + i).style.color="white";
+          }
+      }
+
+      document.getElementById("wynik").innerHTML=klawisz+" "+kod;
+    });
+  </script>
+</body>
+
+</html>
