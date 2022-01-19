@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Test</title>
+	<script>
+		function calc1() {
+			var s, d, h, koszt, w, sz, dk, t, n, wyn, disp;
+
+			s = parseFloat(document.getElementById("s").value);
+			d = parseFloat(document.getElementById("d").value);
+			h = parseFloat(document.getElementById("h").value);
+			koszt = parseFloat(document.getElementById("koszt").value);
+			w = parseFloat(document.getElementById("w").value);
+			sz = parseFloat(document.getElementById("sz").value);
+			dk = parseFloat(document.getElementById("dk").value);
+			t = document.getElementById("t").checked;
+			n = document.getElementById("n").checked;
+
+			wyn = ((s * h * 2) + (d * h * 2) - (sz * w)) * koszt + dk
+			if (t == true) {
+				disp = wyn * 0.9
+			} else {
+				disp = wyn
+			}
+			document.getElementById("disp").innerHTML = disp;
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Kalkulacja dot. remontu mieszkania</h1>
+	Podaj wymiary pokoju:<br />
+	s:<input type="number" name="s" value="" id="s">
+	d:<input type="number" name="d" value="" id="d">
+	h:<input type="number" name="h" value="" id="h"><br />
+	Koszt malowania pokoju 1m^:<input type="number" name="Koszt" value="" id="koszt">zł<br />
+	Wymiary okna:<input type="number" name="wysokosc" value="" id="w">na<input type="number" name="szerokosc" value="" id="sz"><br />
+	Dodatkowe koszty:<input type="number" name="dodatkowe" value="" id="dk"><br />
+	Rabat dot. malowania 10%:Tak:<input type="radio" name="TAK" value="TAK" id="t">Nie:<input type="radio" name="NIE" value="NIE" id="n"><br />
+	<input type="button" name="kalkucja" value="KALKULACJA" onclick="calc1()"><br />
+	<p>Do zapłaty: <span id="disp"></span> zł.</p>
+</body>
+
+</html>
