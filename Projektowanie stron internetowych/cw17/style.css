@@ -1,20 +1,34 @@
+body{
+  background-color: #21252b;
+  position: absolute;
+  left: 30%;
+}
 h1{
   font-family: Helvetica;
-  font-size: 36px;
-  color: #00FF01;
+  font-size: 4em;
+  color: #ffffff;
 }
 h2{
   font-family: Helvetica;
-  font-size: 22px;
-  color: cyan;
+  font-size: 3em;
+  color: #dedede;
 }
 h3{
   font-family: Helvetica;
-  font-size: 18px;
-  color: magenta;
+  font-size: 2.5em;
+  color: #4aa5b9;
 }
 p{
   font-family: Arial;
-  font-size: 16px;
-  color: black;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+#intro1{
+  font-family: Brush Script MT;
+  font-size: 2em;
+  font-weight: 100;
+}
+#intro2{
+  font-family: Courier New;
+  font-size: 1.5em;
 }
