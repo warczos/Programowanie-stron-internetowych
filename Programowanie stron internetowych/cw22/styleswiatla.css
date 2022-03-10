@@ -1,0 +1,26 @@
+#ramka{
+  height: 600px;
+  width: 200px;
+  background-color: black;
+}
+#czerwony{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 1;
+}
+#zolty{
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+  opacity: 0;
+}
+#zielony{
+  height: 200px;
+  width: 200px;
+  background-color: #00FF00;
+  border-radius: 50%;
+  opacity: 0;
+}

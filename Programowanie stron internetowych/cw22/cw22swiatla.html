@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Światła drogowe</title>
+  <link rel="stylesheet" href="styleswiatla.css">
+</head>
+
+<body>
+  <div id="ramka">
+    <div id="czerwony"></div>
+    <div id="zolty"></div>
+    <div id="zielony"></div>
+  </div>
+  <input type="button" name="" value="Sterowanie ręcznie" onclick="zmien()">
+  <input type="button" name="" value="Stop" onclick="pulsstart()">
+  <script>
+    var faza = 1;
+    zmien = () => {
+      switch (faza) {
+        case 1:
+          document.getElementById("czerwony").style.opacity = 1;
+          document.getElementById("zolty").style.opacity = 0;
+          document.getElementById("zielony").style.opacity = 0;
+          faza++;
+          break;
+        case 2:
+          document.getElementById("czerwony").style.opacity = 1;
+          document.getElementById("zolty").style.opacity = 1;
+          document.getElementById("zielony").style.opacity = 0;
+          faza++;
+          break;
+        case 3:
+          document.getElementById("czerwony").style.opacity = 0;
+          document.getElementById("zolty").style.opacity = 0;
+          document.getElementById("zielony").style.opacity = 1;
+          faza++;
+          break;
+        case 4:
+          document.getElementById("czerwony").style.opacity = 0;
+          document.getElementById("zolty").style.opacity = 1;
+          document.getElementById("zielony").style.opacity = 0;
+          faza++;
+          break;
+      }
+      if (faza == 5) {
+        faza = 1
+      }
+    }
+
+    function pulsstart() {
+      setInterval(pulschange, 1000);
+    }
+    var puls = 1;
+    var on, off;
+    function pulschange() {
+      switch (puls) {
+        case 1:
+          document.getElementById("czerwony").style.opacity = 0;
+          document.getElementById("zolty").style.opacity = 1;
+          document.getElementById("zielony").style.opacity = 0;
+          puls++;
+          break;
+        case 2:
+          document.getElementById("czerwony").style.opacity = 0;
+          document.getElementById("zolty").style.opacity = 0;
+          document.getElementById("zielony").style.opacity = 0;
+          puls++;
+          break;
+      }
+      if (puls == 3) {
+        puls = 1
+      }
+    }
+  </script>
+</body>
+
+</html>
