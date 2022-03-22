@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Sprawdzian Oliwier Warchal</title>
+	<script>
+
+	</script>
+</head>
+
+<body>
+	<h1>Formularz dodawania zamówienia</h1>
+	Kategoria produktu
+	<select class="" name="" id="kategoriaid">
+		<option value="Komputery">Komputery</option>
+		<option value="Drukarki">Drukarki</option>
+		<option value="Kamery internetowe">Kamery Internetowe</option>
+		<option value="Inne">Inna elektronika</option>
+	</select><br>
+	Ilość szt. <input type="number" name="" value="" id="numberid"><br>
+	Adres wysyłki:<br>
+	Miejscowość: <input type="text" name="" value="" id="miejscowoscid"><br>
+	Kod pocztowy: <input type="text" name="" value="" id="kodid"><br>
+	Ulica: <input type="text" name="" value="" id="ulicaid"><br>
+	NrD/NrM: <input type="text" name="" value="" id="numerdomuid"><br>
+	<input type="button" name="" value="Dodaj zamówienie" onclick="zapisz()">
+
+	<p>Twoje zamówienie: <span id="kat"></span> szt. <span id="szt"></span> wysłane na adres <span id="adr"></span></p>
+	<script>
+		function zapisz() {
+			let x, y, z, a, b, c;
+			x = document.getElementById("kategoriaid").value;
+			y = document.getElementById("numberid").value;
+			z = document.getElementById("miejscowoscid").value;
+			a = document.getElementById("kodid").value;
+			b = document.getElementById("ulicaid").value;
+			c = document.getElementById("numerdomuid").value;
+
+			let zamowienie = {
+				kategoria: x,
+				sztuki: y,
+				adres: {
+					miejscowosc: z,
+					kodpocztowy: a,
+					ulica: b,
+					nrd: c,
+				},
+				wyswietl: function() {
+					document.getElementById("kat").innerHTML = this.kategoria;
+					document.getElementById("szt").innerHTML = this.sztuki;
+					document.getElementById("adr").innerHTML = this.adres.miejscowosc + " " + this.adres.kodpocztowy + " " + this.adres.ulica + " " + this.adres.nrd;
+				}
+			}
+			zamowienie.wyswietl();
+		}
+	</script>
+
+</body>
+
+</html>
