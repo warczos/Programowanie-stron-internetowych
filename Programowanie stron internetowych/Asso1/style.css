@@ -1,21 +1,19 @@
 body{
   background-color: #21252b;
-  position: absolute;
-  padding: 2%;
 }
 h1{
   font-family: Helvetica;
-  font-size: 4em;
+  font-size: 3em;
   color: #ffffff;
 }
 h2{
   font-family: Helvetica;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #4aa5b9;
 }
 h3{
   font-family: Helvetica;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #4aa5b9;
 }
 p{
@@ -98,6 +96,12 @@ p{
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
+  margin-top: 49px;
+  padding: 1px 20px;
+}
+
+.main div.home {
+  margin-left: -160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
