@@ -1,0 +1,54 @@
+body{
+  background-color: #99ffcc;
+}
+h1{
+  font-family: Helvetica;
+  font-size: 3em;
+  color: #ffffff;
+}
+h2{
+  font-family: Helvetica;
+  font-size: 2.5em;
+  color: #4aa5b9;
+}
+h3{
+  font-family: Helvetica;
+  font-size: 2em;
+  color: #4aa5b9;
+}
+p{
+  font-family: Arial;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+.baner {
+  background-color: #99ff66;
+  /* overflow: hidden; */
+  height: 200px; /* Full-height: remove this if you want "auto" height */
+  width: 1000px; /* Set the width of the sidebar */
+  z-index: 1; /* Stay on top */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.topbar {
+  margin-top: 220px;
+  background-color: #66ccff;
+  margin: auto;
+  width: 1000px;
+  height: 100px;
+}
+
+.topbar a {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Helvetica;
+  margin-left: auto;
+  margin-right: auto;
+}
