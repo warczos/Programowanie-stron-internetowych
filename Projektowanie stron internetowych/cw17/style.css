@@ -1,7 +1,6 @@
 body{
   background-color: #21252b;
   position: absolute;
-  left: 30%;
 }
 h1{
   font-family: Helvetica;
@@ -31,4 +30,37 @@ p{
 #intro2{
   font-family: Courier New;
   font-size: 1.5em;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixe7d Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0px; /* Stay at the top */
+  left: 0;
+  background-color: #00695c; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 1px 20px;
 }
