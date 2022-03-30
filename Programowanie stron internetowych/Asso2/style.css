@@ -1,0 +1,31 @@
+body{
+  background-color: #21252b;
+}
+h1{
+  font-family: Helvetica;
+  font-size: 3em;
+  color: #ffffff;
+}
+h2{
+  font-family: Helvetica;
+  font-size: 2.5em;
+  color: #4aa5b9;
+}
+h3{
+  font-family: Helvetica;
+  font-size: 2em;
+  color: #4aa5b9;
+}
+p{
+  font-family: Arial;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+#winphoto{
+  display: block;
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
