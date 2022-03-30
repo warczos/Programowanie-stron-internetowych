@@ -21,6 +21,14 @@ p{
   font-size: 1.2em;
   color: #ffffff;
 }
+#TCSmainphoto{
+  display: block;
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
