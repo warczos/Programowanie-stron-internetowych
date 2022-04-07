@@ -1,0 +1,12 @@
+body{
+  background-color: black;
+}
+
+#baner{
+  display: block;
+  height: 130px;
+}
+#albert{
+  display: block;
+  height: 500px;
+}
