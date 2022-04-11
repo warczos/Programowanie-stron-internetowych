@@ -3,7 +3,9 @@ body{
   font-family: Arial;
   font-size: 1.2em;
 }
-
+ul{
+  list-style-type: circle;
+}
 #baner{
   display: block;
   height: 130px;
