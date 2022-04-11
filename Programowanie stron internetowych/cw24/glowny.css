@@ -4,7 +4,11 @@ body{
   font-size: 1.2em;
 }
 ul{
-  list-style-type: circle;
+  list-style-type: disc;
+  color: red;
+}
+#redanchor{
+  color: red;
 }
 #baner{
   display: block;
