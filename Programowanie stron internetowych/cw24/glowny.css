@@ -1,5 +1,7 @@
 body{
   background-color: black;
+  font-family: Arial;
+  font-size: 1.2em;
 }
 
 #baner{
@@ -7,6 +9,10 @@ body{
   height: 130px;
 }
 #albert{
+  float: right;
   display: block;
   height: 500px;
+}
+#mark{
+  color: red;
 }
