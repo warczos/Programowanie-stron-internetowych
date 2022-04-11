@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Strona główna</title>
+  <link rel="stylesheet" href="glowny.css">
+  <script type="text/javascript" src="aktualizacja.js"></script>
+</head>
+
+<body onload="updatetime()">
+  <div class="container">
+    <div class="header">
+      <img id="baner" src="baner.jpg" alt="Baner">
+      <marquee loop id="mark">strona internetowa koła fizycznego</marquee>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a id="redanchor" href="index.html">Strona główna</a></li>
+        <li><a id="redanchor" href="terminy.html">Terminy spotkań</a></li>
+        <li><a id="redanchor" href="mailto:fizyk@wp.pl">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <table>
+        <thead>
+          <tr>
+            <th>Rok szkolny</th>
+            <th>Miesiąc</th>
+            <th>Dzień</th>
+            <th>Godzina</th>
+            <th>Sala</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">2013-2014</td>
+            <td>warzesień - styczeń</td>
+            <td>poniedziałek</td>
+            <td>8:00</td>
+            <td rowspan="2">212</td>
+          </tr>
+          <tr>
+            <td>luty - czerwiec</td>
+            <td>środa</td>
+            <td>14:20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      <p>Ostatnia aktualizacja: <span id="akt"></span></p>
+    </div>
+  </div>
+</body>
+
+</html>

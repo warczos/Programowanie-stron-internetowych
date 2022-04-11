@@ -7,6 +7,11 @@ body{
 ul{
   list-style-type: disc;
 }
+table{
+  display: block;
+  color:white;
+  border: 1px solid;
+}
 #redanchor{
   color: red;
 }
@@ -27,4 +32,14 @@ ul{
   bottom: 0;
   right: 0;
   padding-right: 10px;
+}
+.navigation{
+  width: 250px;
+}
+.main{
+  display: block;
+  margin-left: 250px;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
 }
