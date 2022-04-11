@@ -7,5 +7,5 @@ function updatetime() {
   min = 10;
   s = 36;
 
-  document.getElementById("akt").innerHTML = d + "/" + m + "/" + r;
+  document.getElementById("akt").innerHTML = d + "/" + m + "/" + r + "    " + g + "/" + min + "/" + s;
 }

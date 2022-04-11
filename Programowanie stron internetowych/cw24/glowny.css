@@ -2,10 +2,10 @@ body{
   background-color: black;
   font-family: Arial;
   font-size: 1.2em;
+  color: red;
 }
 ul{
   list-style-type: disc;
-  color: red;
 }
 #redanchor{
   color: red;
@@ -21,4 +21,10 @@ ul{
 }
 #mark{
   color: red;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
 }
