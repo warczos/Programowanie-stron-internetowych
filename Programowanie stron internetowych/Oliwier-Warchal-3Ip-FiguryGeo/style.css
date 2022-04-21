@@ -1,0 +1,45 @@
+body{
+  background-color: #21252b;
+  position: absolute;
+  padding: 2%;
+}
+h1{
+  font-family: Helvetica;
+  font-size: 4em;
+  color: #ffffff;
+}
+h2{
+  font-family: Helvetica;
+  font-size: 3em;
+  color: #4aa5b9;
+}
+h3{
+  font-family: Helvetica;
+  font-size: 2.5em;
+  color: #4aa5b9;
+}
+p{
+  font-family: Arial;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+#banertext{
+  font-style: Arial;
+  font-variant: small-caps;
+  font-size: 300%;
+  text-align: center;
+}
+.baner{
+  margin-top: -20px;
+  height: 50px;
+}
+.sideleft{
+  height: 500px;
+  width: 20%;
+}
+.sideright{
+  width: 80%;
+}
+.footer{
+
+}
