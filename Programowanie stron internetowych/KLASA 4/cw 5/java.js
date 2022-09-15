@@ -3,7 +3,7 @@ function disp(){
   i = 0;
   res = "";
 
-  while (i < 100) {
+  while (i <= 100) {
     if (i % 5 == 0) {
       res += i + " ";
       console.log(i);

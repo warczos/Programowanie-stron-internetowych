@@ -1,14 +1,15 @@
 function disp(){
-  var i, res;
-  i = 0;
-  res = "";
+  var res, x, y;
+  res = 0;
+  x = parseInt(document.getElementById("IdLiczbaX").value);
+  y = parseInt(document.getElementById("IdLiczbaY").value);
 
-  while (i < 100) {
-    if (i % 5 == 0) {
-      res += i + " ";
-      console.log(i);
+  if (x < y) {
+    for (var i = x + 1; i < y; i++) {
+      res = res + i;
     }
-    i++;
+  } else {
+    document.getElementById("suma").innerHTML = "Liczba X większa od Y";
   }
-  document.getElementById("liczby").innerHTML = res;
+  document.getElementById("suma").innerHTML = "Suma przedziału: " + res;
 }
