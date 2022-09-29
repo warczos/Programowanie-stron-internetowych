@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zad 3</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    Podaj liczbę:
+    <input type="text" name="" value="" id="numinput">
+    <br>
+    <input type="button" name="" value="Sprawdź" onclick="check()">
+    <br>
+    3 potęga liczby = <span id="out"> </span>
+    <script type="text/javascript">
+    function check() {
+      var liczba, res;
+      liczba = parseFloat(document.getElementById("numinput").value);
+
+      res = Math.pow(liczba, 3);
+
+      document.getElementById("out").innerHTML = res;
+    }
+    </script>
+  </body>
+</html>

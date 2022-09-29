@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Zad 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    Podaj liczbę:
+    <input type="text" name="" value="" id="numinput">
+    <br>
+    <input type="button" name="" value="Sprawdź" onclick="check()">
+    <br>
+    <span id="out"> </span>
+    <script type="text/javascript">
+    function check() {
+      var liczba;
+      liczba = parseFloat(document.getElementById("numinput").value);
+
+      if ((liczba % 2) == 0) {
+        document.getElementById("out").innerHTML = "Liczba jest parzysta";
+      } else {
+        document.getElementById("out").innerHTML = "Liczba jest nieparzysta";
+      }
+
+    }
+    </script>
+  </body>
+</html>
