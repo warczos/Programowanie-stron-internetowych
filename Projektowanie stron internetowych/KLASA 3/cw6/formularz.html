@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularz3</title>
+  </head>
+  <body>
+    <p>Wypełnij formularz</p>
+
+    <form enctype="text/plain" action="mailto:oliwierwarchal@warczos.pl?subject=Moja ankieta" method="post">
+      <fieldset>
+      <legend>Dane Osobowe</legend>
+      <label for="Imię">Imię:</label>
+      <input type="text" name="imie" value=""><br>
+      <label for="Nazwisko">Nazwisko:</label>
+      <input type="text" name="nazwisko" value=""><br>
+      Zawód: <input type="text" name="zawod" value=""><br>
+      Miejsce zamieszkania:
+      Miasto<input type="radio" name="mz" value="miasto">
+      Wieś<input type="radio" name="mz" value="wies"><br>
+      Wykształcenie:
+      Wyższe<input type="radio" name="wyksztalcenie" value="wyzsze">
+      Średnie<input type="radio" name="wyksztalcenie" value="srednie"><br>
+      Płeć:
+      K<input type="radio" name="plec" value="k">
+      M<input type="radio" name="plec" value="m">
+      Inna<input type="radio" name="plec" value="i">
+      Nie chcę podawać<input type="radio" name="plec" value="npd"><br>
+      Oceń książkę
+      <select name="ocena" size="5" multiple>
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="1">1</option>
+        <option value="5">5</option>
+        <option value="3">3</option>
+      </select>
+      <input type="submit" name="" value="wyślij">
+      <input type="reset" name="" value="Wyczyść wszystko">
+      </fieldset>
+    </form>
+  </body>
+</html>
