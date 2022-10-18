@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Nazwa - wiadomości</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100;300;400&family=Ubuntu+Mono:wght@400;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="topnav">
+		<a class="home" href="index.html">Nazwa Placeholder</a>
+		<a href="poczatki.html">Wiadomości</a>
+		<a href="memories.html">Historia</a>
+		<a class="active" href="kontakt.html">Kontakt</a>
+	</div>
+	<div class="main">
+		<div class="home">
+			<form enctype="text/plain" action="mailto:oliwierwarchal@warczos.pl?subject=The Kontakt" method="post">
+	      <fieldset>
+	      <legend>Dane Osobowe</legend>
+	      <label for="Imię">Imię:</label>
+	      <input type="text" name="imie" value=""><br>
+	      <label for="Nazwisko">Nazwisko:</label>
+	      <input type="text" name="nazwisko" value=""><br>
+				<label for="Numer telefonu">Numer telefonu:</label>
+				<input type="text" name="numertel" value=""><br>
+				<label for="eMail">E-Mail:</label>
+				<input type="text" name="eMail" value=""><br>
+	      Miejsce zamieszkania:
+	      Miasto<input type="radio" name="mz" value="miasto">
+	      Wieś<input type="radio" name="mz" value="wies"><br>
+	      Płeć:
+	      K<input type="radio" name="plec" value="k">
+	      M<input type="radio" name="plec" value="m">
+	      Inna<input type="radio" name="plec" value="i">
+	      Nie chcę podawać<input type="radio" name="plec" value="npd"><br>
+	      <input type="submit" name="" value="Wyślij">
+	      <input type="reset" name="" value="Wyczyść wszystko">
+	      </fieldset>
+	    </form>
+		</div>
+	</div>
+</body>
+
+</html>
