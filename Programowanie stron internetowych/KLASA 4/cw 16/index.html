@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Login, hasło</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="java.js" charset="utf-8"></script>
+
+  <form class="" action="index.html" method="post">
+    <label for="Color">1. Wybierz swój ulubiony kolor </label>
+    <input type="color" name="" value="#00ffff" id="color" onInput="colorChange()">
+    <br>
+    <label for="name">2. Imie: </label>
+    <input type="text" name="imie" value="" id="name">
+    <br>
+    <label for="surname">3. Nazwisko: </label>
+    <input type="text" name="surname" value="" id="surname">
+    <br>
+    <label for="birthday">4. Data urodzenia: </label>
+    <input type="date" name="birthday" value="" id="birthday">
+    <br>
+    <label for="gender">5. Wybierz płeć: </label>
+    <select name="gender">
+      <option value="none" selected>Płeć</option>
+      <option value="male">Mężczyzna</option>
+      <option value="female">Kobieta</option>
+      <option value="other">Inna</option>
+    </select>
+    <br>
+    <label for="phone">6. Numer telefonu: </label>
+    <input type="range" name="phone" id="phone" value="" min="1" max="999999999" oninput="this.nextElementSibling.value = this.value">
+    <output></output>
+    <br>
+    <label for="brand">7. Ulubiona marka samochodu: </label>
+    <input type="text" name="brand" id="brand" value="">
+    <br>
+    <label for="engineType">8. Typ silnika:</label>
+    <br>
+    <input type="radio" name="engineType" value=""> Spalinowy
+    <input type="radio" name="engineType" value=""> Hybrydowy
+    <input type="radio" name="engineType" value=""> Elektryczny
+    <br>
+    <label for="carType"></label>
+  </form>
+
+</html>
