@@ -1,0 +1,56 @@
+.baner{
+  text-align: center;
+  height: 400px;
+  background-color: snow;
+  width: 70%;
+  float: left;
+}
+.main{
+  height: 400px;
+  background: snow;
+  font-size: 150%;
+  width: 70%;
+  float: left;
+}
+.menu{
+  height: 150px;
+  background-color: steelblue;
+  color: white;
+  width: 30%;
+  float: right;
+  text-align: center;
+  top: 0;
+}
+.list{
+  height: 350px;
+  background-color: steelblue;
+  color: white;
+  width: 30%;
+  float: right;
+}
+.image{
+  height: 300px;
+  background-color: snow;
+  color: white;
+  text-align: center;
+  width: 30%;
+  float: right;
+}
+footer{
+  background-color: steelblue;
+  color: white;
+  clear: both;
+}
+h2 {
+    font-size: 250%;
+}
+
+img {
+    padding: 4px;
+}
+
+img:hover {
+    padding: 3px;
+    border: 1px solid steelblue;
+
+}
