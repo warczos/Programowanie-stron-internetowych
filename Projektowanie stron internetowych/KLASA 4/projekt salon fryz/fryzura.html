@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styl2.css">
   </head>
   <body>
+    <script src="skrypt.js" charset="utf-8"></script>
     <div class="menu">
       <h2>MENU</h2>
     </div>
@@ -35,8 +36,13 @@
       </ol>
     </div>
     <div class="main">
-      <h5>Kontakt: 111 222 333</h5>
-      <p>Witaj! Miło nam, że odwiedziłeś nasz salon. <br>Zapoznaj się z ofertą i sprawdź promocje!</p>
+      <h3>Dziś promocja na strzyżenie włosów</h3>
+      <input type="radio" name="1" id="kro">Krótkie <br>
+      <input type="radio" name="1" id="sre">Średnie <br>
+      <input type="radio" name="1" id="pol">Półdługie <br>
+      <input type="radio" name="1" id="dlu">Długie <br>
+      <button onclick="pokazCene()">Odkryj promocje</button>
+      <span id="wynik"></span>
     </div>
     <div class="image">
       <img src="obraz1.jpg" alt="Fryzjer">
