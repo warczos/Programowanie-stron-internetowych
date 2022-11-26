@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Usługi fryzjerskie</title>
+  <link rel="stylesheet" href="styl2.css">
+</head>
+
+<body>
+  <script src="skrypt.js" charset="utf-8"></script>
+  <div class="menu">
+    <h2>MENU</h2>
+  </div>
+  <div class="baner">
+    <a href="index.html">
+      <h2>SALON FRYZJERSKI</h2>
+    </a>
+    <img src="obraz2.jpg" alt="Czesanie">
+  </div>
+  <div class="list">
+    <ol>
+      <li>
+        <a href="fryzura.html">Strzyżenie</a>
+        <ul>
+          <li>Krótkie</li>
+          <li>Średnie</li>
+          <li>Półdługie</li>
+          <li>Długie</li>
+        </ul>
+      </li>
+      <li>
+        Czesanie
+      </li>
+      <li>
+        Koloryzacja
+      </li>
+    </ol>
+  </div>
+  <div class="main">
+    <h3>Dziś promocja na strzyżenie włosów</h3>
+    <input type="radio" name="rodzaj" id="short">Krótkie <br>
+    <input type="radio" name="rodzaj" id="average">Średnie <br>
+    <input type="radio" name="rodzaj" id="shortlong">Półdługie <br>
+    <input type="radio" name="rodzaj" id="long">Długie <br>
+    <button onclick="dispPrice()">Odkryj promocje</button>
+    <br>
+    <span id="wynik"></span>
+  </div>
+  <div class="image">
+    <img src="obraz1.jpg" alt="Fryzjer">
+  </div>
+  <footer>Autor: Oliwier Warchał</footer>
+</body>
+
+</html>
