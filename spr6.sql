@@ -1,7 +1,7 @@
 186.
 SELECT DISTINCT imie, nazwisko, id_zamowienia, data_zamowienia FROM klienci LEFT JOIN zamowienia ON klienci.id_klienta=zamowienia.id_klienta;
 187.
-SELECT DISTINCT imie, nazwisko, id_zamowienia FROM klienci LEFT JOIN zamowienia ON klienci.id_klienta=zamowienia.id_klienta WHERE id_zamowienia IS NULL OR id_zamowienia='';
+SELECT DISTINCT imie, nazwisko FROM klienci LEFT JOIN zamowienia ON klienci.id_klienta=zamowienia.id_klienta WHERE id_zamowienia IS NULL OR id_zamowienia='';
 188.
 SELECT login, email, nazwisko, imie FROM klienci RIGHT JOIN logowania ON klienci.id_logowania=logowania.id_logowania WHERE telefon IS NULL OR telefon='' OR miejscowosc IS NULL OR miejscowosc='' OR kod_pocztowy IS NULL OR kod_pocztowy='' OR ulica IS NULL OR ulica='' OR nr_domu IS NULL OR nr_domu='';
 189.
