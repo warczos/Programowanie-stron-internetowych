@@ -1,0 +1,19 @@
+SELECT CURRENT_USER();
+SELECT USER();
+SELECT user, password, host from mysql.user;
+DESC mysql.user;
+show create TABLE mysql.user;
+CREATE USER 'cc'@'localhost';
+SET PASSWORD = PASSWORD('Hasło');
+UPDATE mysql.user SET PASSWORD = PASSWORD('zst') WHERE User = 'cc';
+CURRENT_USER 'cf'@'%' IDENTIFIED BY 'qwerty';
+RENAME USER 'cf'@'%' TO 'fc'@'localhost';
+DROP USER 'cc'@'localhost';
+
+DCL - Data Control List
+
+GRANT - nadaje uprawnienia
+
+GRANT [uprawnienia] ON [nazwa_bazy].[nazwa_tabeli] TO 'nazwa_konta'@'nazwa_hosta';
+        ALL PRIVILAGES      ki.*                            'root'@'localhost'
+        ALL
