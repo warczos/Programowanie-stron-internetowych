@@ -11,7 +11,7 @@ function zakres() {
     document.getElementById("wynik").innerHTML = z;}
 
 function sprawdz() {
-		var x = +document.getElementById("liczba").value;
+		var x = parseInt(document.getElementById("liczba").value);
 		var a = x > 0 ? "Liczba " + x + " jest dodatnia"
 	        : (x < 0 ? "Liczba " + x + " jest ujemna"
 		        : "Liczba " + x + " to zero");
