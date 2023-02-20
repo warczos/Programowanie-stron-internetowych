@@ -15,5 +15,9 @@ DCL - Data Control List
 GRANT - nadaje uprawnienia
 
 GRANT [uprawnienia] ON [nazwa_bazy].[nazwa_tabeli] TO 'nazwa_konta'@'nazwa_hosta';
-        ALL PRIVILAGES      ki.*                            'root'@'localhost'
+        ALL PRIVILEGES      ki.*                            'root'@'localhost'
         ALL
+
+
+FLUSH PRIVILEGES;
+REVOKE
