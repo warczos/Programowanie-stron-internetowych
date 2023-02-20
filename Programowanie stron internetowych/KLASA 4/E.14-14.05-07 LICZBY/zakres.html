@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <title>Liczby</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" />
@@ -19,15 +20,21 @@
     <a href="opis.html" >Opis</a>
     <a href="indexliczba.html">Jaka to liczba?</a>
     <a href="zakres.html">Liczby całkowite z zakresu</a>
+
   </nav>
 
   <main class="footer">
-    <h1>Liczba dodatnia, ujemna czy zero</h1>
-	  <p>Podaj liczbę całkowitą:</p>
-	  <input type="number" id="liczba">
-	  <button onclick="sprawdz()">Sprawdź</button>
+    <h1>Zakres liczb</h1>
+	  <p>Podaj liczbę START:</p>
+	  <input type="number" id="start">
+	  <p>Podaj liczbę KONIEC:</p>
+	  <input type="number" id="koniec">
+	  <button onclick="zakres()">Wyświetl</button>
 	  <p id="wynik"></p>
   </main>
+
+
 <script src="liczby.js"></script>
 </body>
+
 </html>
