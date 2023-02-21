@@ -23,11 +23,14 @@
 
   <main class="footer">
     <h1>Liczba dodatnia, ujemna czy zero</h1>
-	  <p>Podaj liczbę całkowitą:</p>
-	  <input type="number" id="liczba">
-	  <button onclick="sprawdz()">Sprawdź</button>
 	  <p id="wynik"></p>
   </main>
-<script src="liczby.js"></script>
+<script>
+		var x = parseInt(prompt("Podaj liczbę (całkowita): "))
+		var a = x > 0 ? "Liczba " + x + " jest dodatnia"
+	        : (x < 0 ? "Liczba " + x + " jest ujemna"
+		        : "Liczba " + x + " to zero");
+		document.getElementById("wynik").innerHTML = a;15
+</script>
 </body>
 </html>
