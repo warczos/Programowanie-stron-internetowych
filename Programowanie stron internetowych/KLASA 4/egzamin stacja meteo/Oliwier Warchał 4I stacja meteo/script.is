@@ -1,0 +1,11 @@
+function kelwiny() {
+    var dane = parseFloat(document.getElementById("wejscie").value);
+    var wynik = dane + 273.15;
+    document.getElementById("wyjscie").innerHTML = wynik + " K";
+}
+
+function frajerhaity() {
+    var dane = parseFloat(document.getElementById("wejscie").value);
+    var wynik = (dane * 1.8) + 32;
+    document.getElementById("wyjscie").innerHTML = wynik + " F";
+}

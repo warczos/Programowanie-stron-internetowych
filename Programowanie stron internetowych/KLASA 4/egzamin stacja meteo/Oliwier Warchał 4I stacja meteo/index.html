@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja Meteo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="page">
+        <div id="baner">
+            <h1> STACJA METEO </h1>
+        </div>
+        <div id="lewy">
+            <h2> Dokumentacja wyników zapytań w bazie Meteo </h2>
+            <table>
+                <tr>
+                    <td><img src="kw1.jpg" alt="kwerenda1" border="1px"></img> </td>
+                    <td><img src="kw2.jpg" alt="kwerenda2" border="1px"></img> </td>
+                </tr>
+                <tr>
+                    <td><img src="kw3.jpg" alt="kwerenda3" border="1px"></img> </td>
+                    <td><img src="kw4.jpg" alt="kwerenda4" border="1px"></img> </td>
+                </tr>
+            </table>
+        </div>
+        <div id="prawy">
+            <h2> Zamiana jednostek temperatury </h2>
+            <form>
+                temperatura w <sup>o</sup>C <br />
+                <input type="text" id="wejscie"> <br>
+                Zamiana jednostek na: <br>
+                <input type="button" value="Kelwiny" onClick="kelwiny()">
+                <input type="button" value="Fahrenheity" onClick="frajerhaity()">
+                <p id="wyjscie"> </p>
+            </form>
+            <h2> Do pobrania </h2>
+            <a href="baza/kwerendy.txt"> Kwerendy </a> <br>
+            <a href="baza/meteo.doc"> Eksport MySQL </a> <br>
+        </div>
+        <div id="stopka">
+            <p>AUTOR STRONY: Oliwier Warchał </p>
+        </div>
+    </div>
+
+    <script src="script.is"></script>
+</body>
+
+</html>

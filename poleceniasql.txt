@@ -5,6 +5,7 @@ DESC mysql.user;
 show create TABLE mysql.user;
 CREATE USER 'cc'@'localhost';
 SET PASSWORD = PASSWORD('Hasło');
+SET PASSWORD FOR 'aa'@'localhost' = PASSWORD('aa');
 UPDATE mysql.user SET PASSWORD = PASSWORD('zst') WHERE User = 'cc';
 CURRENT_USER 'cf'@'%' IDENTIFIED BY 'qwerty';
 RENAME USER 'cf'@'%' TO 'fc'@'localhost';
@@ -21,3 +22,8 @@ GRANT [uprawnienia] ON [nazwa_bazy].[nazwa_tabeli] TO 'nazwa_konta'@'nazwa_hosta
 
 FLUSH PRIVILEGES;
 REVOKE
+
+GRANT SELECT ON library4.klienci TO 'aa'@'localhost';
+GRANT INSERT, UPDATE, DELETE, DROP, CREATE, ALTER, INDEX ON library4.klienci TO 'aa'@'localhost';
+
+REVOKE ALL PRIVILEGES ON *.* FROM 'aa'@'localhost';

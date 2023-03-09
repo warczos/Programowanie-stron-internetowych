@@ -1,0 +1,42 @@
+a {
+    color: yellow;
+}
+
+#baner,
+#stopka,
+#prawy {
+    color: white;
+    background-color: #4A7684;
+}
+
+#baner,
+#lewy,
+#stopka {
+    text-align: center;
+}
+
+#baner,
+#stopka {
+    padding: 20px;
+    font-family: Arial;
+}
+
+#lewy {
+    width: 65%;
+    float: left;
+    height: 500px;
+}
+
+#prawy {
+    width: 35%;
+    height: 500px;
+    float: right;
+}
+
+#stopka {
+    clear: both;
+}
+
+img {
+    height: 200px;
+}
