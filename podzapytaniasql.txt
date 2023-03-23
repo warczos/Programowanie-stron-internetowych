@@ -1,0 +1,39 @@
+Podzapytania (subquerry)
+
+Podzapytanie polega na umieszczeniu instrukcji (klauzuli) SELECT wewnątrz innej instrukcji SELECT.
+
+1. SELECT ... (SELECT ...(SELECT ...))
+
+Przykłady:
+Podaj nazwiska sposród wszystkich nazwisk i imion klientów które to zostały wyfiltrowane z identyfikatorów nazwisk, imion i miejsc zamieszkania
+
+SELECT nazwisko FROM
+    (SELECT nazwisko, imie FROM
+        (
+        SELECT id_klienta, nazwisko, imie, miejscowosc from klienci
+        )a
+    )b;
+
+Klasyfikacja podzapytań:
+1. ... ze względu na zwracany wynik przez zapytanie wewnętrzne:
+    - zwracające wartość skalarną (pojednyczą):
+        Jaka jest maksymalna cena ksiązki?
+        SELECT MAX(cena) FROM ksiazki;
+    - zwracające wartość wektorową (lista wartości):
+        Podaj tytuły książek z gatunku podręczników?
+        SELECT tytul FROM (SELECT tytul, gatunek FROM ksiazki WHERE gatunek = "podręcznik")a;
+    - zwracające dane tabelaryczne
+        Podaj pogrupowane wg identyfikatorów książek sumy ich zamowien
+        SELECT ksiazki.tytul, SUM(id_ksiazki)*ilosc FROM ksiazki JOIN ilosci USING(id_ksiazki) GROUP BY ksiazki
+2. ze względu na korelację z zapytaniem nadrzędnym:
+    - niepowiązane (nieskorelowane)
+        Cechy:
+            -zapytanie wewnętrzne wykonywane jest dokłanie jeden raz,
+            -zapytanie wewnętrzne zwraca zawsze pojednyczy wynik,
+            -zapytanie wewnątrzne jest niezależne i może funkcjonować jako jako samodzielne,
+        Podaj nazwisko i imie autora, który napisał książkę sprzedawaną pod identyfikatorem nr 99
+        SELECT a.nazwisko, a.imie FROM autorzy a WHERE id_autora =
+        (SELECT id_autora FROM ksiazki WHERE id_ksiazki = 99);
+
+        W warunkach i innych zapytaniach nieskorelowanych nie wolno używać > >= <= < <> !=
+        W większości DBMS tabele muszą być wywołane aliasem
