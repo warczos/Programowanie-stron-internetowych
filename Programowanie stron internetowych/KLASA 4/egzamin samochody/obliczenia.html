@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stacja Paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+
+<body>
+    <section class="baner">
+        <h1>Całodobowa stacja paliw</h1>
+
+    </section>
+    <section class="menu">
+        <a href="stacja.html"><img src="home.png" alt="stcja"></a>
+        <a href="obliczenia.html"><img src="znak.png" alt="obliczenia"></a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </section>
+    <div class="flex">
+        <section class="lewy">
+            <h2>Orientacyjny koszt paliwa</h2>
+            <div>
+                <label for="rodzaj">
+                    Rodzaj paliwa paliwa (1-benzyna, 2-olej napędowy):
+                </label>
+                <input type="number" name="rodzaj" id="rodzaj">
+            </div>
+            <div>
+                <label for="litrow">Ile litrów?</label>
+                <input type="number" name="litrow" id="litrow">
+            </div>
+            <div>
+                <input type="button" value="OBLICZ" onclick="oblicz()">
+            </div>
+            <div id="wynik"></div>
+            <script>
+                function oblicz() {
+                    var rodz, ile, wynik, wartosc, rez;
+                    rodz = document.getElementById("rodzaj").value;
+                    ile = document.getElementById("litrow").value;
+                    wartosc = 0;
+                    if (rodz == 1) {
+                        wartosc = 4;
+                    } else {
+                        wartosc = 3.5;
+                    }
+                    rez = ile * wartosc;
+                    document.getElementById("wynik").innerHTML = rez;
+                }
+            </script>
+        </section>
+        <section class="prawy">
+            <img src="samochod.png" alt="samochód">
+        </section>
+    </div>
+    <section class="stopka">
+        <p>Stronę opracował: Oliwier Warchał</p>
+    </section>
+
+</body>
+
+</html>
