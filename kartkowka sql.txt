@@ -1,7 +1,7 @@
 1. Wynik skalarny w SQL oznacza jedną wartość liczbową lub ciąg znaków zwróconą przez zapytanie
 2. W SQL do konstrukcji podzapytań można użyć operatorów logicznych takich jak IN, EXISTS, ALL, ANY.
 3. W SQL nie ma ograniczenia co do liczby podzapytań w zapytaniu . Jednakże, złożoność zapytania rośnie wraz ze wzrostem liczby podzapytań, co może prowadzić do spadku wydajności.
-4.
+4. UNION
 5. W SQL operatorami matematycznymi/logicznymi zastępującymi klauzulę UNION, INTERSECT i EXCEPT są odpowiednio: +, *, -.
 6. W MySQL klauzula EXCEPT nie jest dostępna. Zamiast tego można użyć klauzuli NOT IN lub LEFT JOIN z warunkiem IS NULL
 7. Operator EXISTS w SQL służy do testowania istnienia jakiegokolwiek rekordu w podzapytaniu. Operator zwraca wartość TRUE, jeśli podzapytanie zwróciło jeden lub więcej rekordów.
